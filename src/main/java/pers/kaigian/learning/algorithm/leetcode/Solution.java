@@ -1,5 +1,7 @@
 package pers.kaigian.learning.algorithm.leetcode;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLFault;
+
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -24,6 +26,16 @@ class TreeNode {
 		this.val = val;
 		this.left = left;
 		this.right = right;
+	}
+}
+
+class ListNode {
+	int val;
+	ListNode next;
+
+	ListNode(int x) {
+		val = x;
+		next = null;
 	}
 }
 
