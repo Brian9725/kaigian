@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Create 2021-04-14 14:40
  **/
 public class ProtostuffUtil {
-	private static Map<Class<?>, Schema<?>> cachedSchema = new ConcurrentHashMap<Class<?>, Schema<?>>();
+	private static final Map<Class<?>, Schema<?>> cachedSchema = new ConcurrentHashMap<>();
 
 	private static <T> Schema<T> getSchema(Class<T> clazz) {
 		@SuppressWarnings("unchecked")
