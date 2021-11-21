@@ -6,17 +6,17 @@ package pers.kaigian.learning.jvm;
  **/
 public class MyClassLoader extends ClassLoader {
 
-	static int a = 7;
+    static int a = 7;
 
-	static {
-		a = 8;
-	}
+    static {
+        a = 8;
+    }
 
-	public MyClassLoader() {
-		System.out.println(a);
-	}
+    public MyClassLoader() {
+        System.out.println(a);
+    }
 
-	public static void main(String[] args) {
-		System.out.println(a);
-	}
+    public static void main(String[] args) {
+        System.out.println(a);
+    }
 }

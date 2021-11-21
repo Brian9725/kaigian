@@ -14,30 +14,30 @@ import io.netty.channel.socket.nio.NioSocketChannel;
  * @Create 2021-04-13 13:54
  **/
 public class Client {
-	public static void main(String[] args) {
-		EventLoopGroup group = new NioEventLoopGroup();
-		try {
-			Bootstrap bootstrap = new Bootstrap();
-			bootstrap.group(group)
-					.channel(NioSocketChannel.class)
-					.handler(new ChannelInitializer<SocketChannel>() {
-						@Override
-						protected void initChannel(SocketChannel channel) throws Exception {
-							ChannelPipeline pipeline = channel.pipeline();
+    public static void main(String[] args) {
+        EventLoopGroup group = new NioEventLoopGroup();
+        try {
+            Bootstrap bootstrap = new Bootstrap();
+            bootstrap.group(group)
+                    .channel(NioSocketChannel.class)
+                    .handler(new ChannelInitializer<SocketChannel>() {
+                        @Override
+                        protected void initChannel(SocketChannel channel) throws Exception {
+                            ChannelPipeline pipeline = channel.pipeline();
 //							pipeline.addLast(new StringEncoder());
-							pipeline.addLast(new MyMessageEncoder());
-							pipeline.addLast(new MyStringEncoder());
-						}
-					});
-			ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 9000).sync();
-			System.out.println("当前地址" + channelFuture.channel().localAddress());
-			for (int i = 0; i < 100; i++) {
-				channelFuture.channel().writeAndFlush("hello,world");
-			}
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} finally {
-			group.shutdownGracefully();
-		}
-	}
+                            pipeline.addLast(new MyMessageEncoder());
+                            pipeline.addLast(new MyStringEncoder());
+                        }
+                    });
+            ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 9000).sync();
+            System.out.println("当前地址" + channelFuture.channel().localAddress());
+            for (int i = 0; i < 100; i++) {
+                channelFuture.channel().writeAndFlush("hello,world");
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            group.shutdownGracefully();
+        }
+    }
 }

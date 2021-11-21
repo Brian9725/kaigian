@@ -14,27 +14,27 @@ import java.util.Set;
  * @Create 2021-04-07 17:04
  **/
 public class NIOSelectorServer {
-	public static void main(String[] args) throws IOException {
-		ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
-		serverSocketChannel.socket().bind(new InetSocketAddress(9000));
-		serverSocketChannel.configureBlocking(false);
-		Selector selector = Selector.open();
-		SelectionKey selectionKey = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+    public static void main(String[] args) throws IOException {
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.socket().bind(new InetSocketAddress(9000));
+        serverSocketChannel.configureBlocking(false);
+        Selector selector = Selector.open();
+        SelectionKey selectionKey = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
 
-		while (true) {
-			selector.select();
-			Set<SelectionKey> selectionKeys = selector.selectedKeys();
-			for (SelectionKey key : selectionKeys) {
-				SocketChannel socketChannel = (SocketChannel) key.channel();
-				if (key.isAcceptable()) {
-					serverSocketChannel.accept();
-					socketChannel.register(selector, SelectionKey.OP_READ);
-				} else if (key.isReadable()) {
-					ByteBuffer buffer = ByteBuffer.allocate(128);
-					
-				}
+        while (true) {
+            selector.select();
+            Set<SelectionKey> selectionKeys = selector.selectedKeys();
+            for (SelectionKey key : selectionKeys) {
+                SocketChannel socketChannel = (SocketChannel) key.channel();
+                if (key.isAcceptable()) {
+                    serverSocketChannel.accept();
+                    socketChannel.register(selector, SelectionKey.OP_READ);
+                } else if (key.isReadable()) {
+                    ByteBuffer buffer = ByteBuffer.allocate(128);
 
-			}
-		}
-	}
+                }
+
+            }
+        }
+    }
 }

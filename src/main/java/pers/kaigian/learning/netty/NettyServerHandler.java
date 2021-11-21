@@ -11,21 +11,21 @@ import io.netty.util.CharsetUtil;
  * @Create 2021-04-13 10:54
  **/
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
-	@Override
-	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-		System.out.println("服务器读取线程 " + Thread.currentThread().getName());
-		ByteBuf buf = (ByteBuf) msg;
-		System.out.println("客户端发送消息是:" + buf.toString(CharsetUtil.UTF_8));
-	}
+    @Override
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        System.out.println("服务器读取线程 " + Thread.currentThread().getName());
+        ByteBuf buf = (ByteBuf) msg;
+        System.out.println("客户端发送消息是:" + buf.toString(CharsetUtil.UTF_8));
+    }
 
-	@Override
-	public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
-		ByteBuf buf = Unpooled.copiedBuffer("HelloClient", CharsetUtil.UTF_8);
-		ctx.writeAndFlush(buf);
-	}
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+        ByteBuf buf = Unpooled.copiedBuffer("HelloClient", CharsetUtil.UTF_8);
+        ctx.writeAndFlush(buf);
+    }
 
-	@Override
-	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-		ctx.close();
-	}
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        ctx.close();
+    }
 }

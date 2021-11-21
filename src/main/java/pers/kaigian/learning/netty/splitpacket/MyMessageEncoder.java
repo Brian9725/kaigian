@@ -10,11 +10,11 @@ import pers.kaigian.learning.netty.ProtostuffUtil;
  * @Create 2021-04-14 14:06
  **/
 public class MyMessageEncoder extends MessageToByteEncoder<MyProtocol> {
-	@Override
-	protected void encode(ChannelHandlerContext channelHandlerContext, MyProtocol myProtocol, ByteBuf byteBuf) throws Exception {
-		System.out.println("MyMessageEncoder...");
-		System.out.println("实际内容：" + ProtostuffUtil.deserializer(myProtocol.getContent(), String.class));
-		byteBuf.writeInt(myProtocol.getLength());
-		byteBuf.writeBytes(myProtocol.getContent());
-	}
+    @Override
+    protected void encode(ChannelHandlerContext channelHandlerContext, MyProtocol myProtocol, ByteBuf byteBuf) throws Exception {
+        System.out.println("MyMessageEncoder...");
+        System.out.println("实际内容：" + ProtostuffUtil.deserializer(myProtocol.getContent(), String.class));
+        byteBuf.writeInt(myProtocol.getLength());
+        byteBuf.writeBytes(myProtocol.getContent());
+    }
 }
