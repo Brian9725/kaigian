@@ -3,8 +3,8 @@ package pers.kaigian.learning.concurrent;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author hukaiyang
- * @date 2021-08-02 8:06
+ * @Author BrianHu
+ * @Create 2021-08-02 8:06
  **/
 public class ReentrantLockTest {
 

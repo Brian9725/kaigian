@@ -5,8 +5,8 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 /**
- * @author hukaiyang
- * @date 2021-04-13 13:54
+ * @Author BrianHu
+ * @Create 2021-04-13 13:54
  **/
 public class ServerHandler extends SimpleChannelInboundHandler<String> {
 	@Override

@@ -3,8 +3,8 @@ package pers.kaigian.learning.jvm;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
- * @author hukaiyang
- * @date 2021-03-31 15:16
+ * @Author BrianHu
+ * @Create 2021-03-31 15:16
  **/
 public class ClassHeaderTest {
 	public static void main(String[] args) {

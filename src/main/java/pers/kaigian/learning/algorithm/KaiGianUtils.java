@@ -3,8 +3,8 @@ package pers.kaigian.learning.algorithm;
 /**
  * 包含自己常用算法的工具类
  *
- * @author hukaiyang
- * @date 2021-08-25 10:20
+ * @Author BrianHu
+ * @Create 2021-08-25 10:20
  **/
 public class KaiGianUtils {
 	/**

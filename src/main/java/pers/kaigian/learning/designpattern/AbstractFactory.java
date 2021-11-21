@@ -1,10 +1,8 @@
 package pers.kaigian.learning.designpattern;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
-
 /**
- * @author hukaiyang
- * @date 2021-04-21 14:46
+ * @Author BrianHu
+ * @Create 2021-04-21 14:46
  **/
 public class AbstractFactory {
 	public static void main(String[] args) {

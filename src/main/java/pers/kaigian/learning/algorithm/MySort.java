@@ -3,10 +3,11 @@ package pers.kaigian.learning.algorithm;
 import java.util.Random;
 
 /**
- * @author hukaiyang
- * @date 2021-04-21 14:20
+ * 可以用leetcode-912来测试结果
+ *
+ * @Author BrianHu
+ * @Create 2021-04-21 14:20
  **/
-//可以用leetcode912来测试结果
 public class MySort {
 
 	private void realMergeSort(int[] nums, int[] helper, int start, int end) {

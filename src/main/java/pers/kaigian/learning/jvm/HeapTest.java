@@ -3,8 +3,8 @@ package pers.kaigian.learning.jvm;
 import java.util.ArrayList;
 
 /**
- * @author hukaiyang
- * @date 2021-07-15 15:45
+ * @Author BrianHu
+ * @Create 2021-07-15 15:45
  **/
 public class HeapTest {
 	byte[] a = new byte[1024 * 100];

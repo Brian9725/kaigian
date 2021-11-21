@@ -1,13 +1,12 @@
 package pers.kaigian.learning.jvm;
 
-import java.util.Hashtable;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author hukaiyang
- * @date 2021-05-18 13:59
+ * @Author BrianHu
+ * @Create 2021-05-18 13:59
  **/
 public class HashMapTest {
 

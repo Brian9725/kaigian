@@ -3,8 +3,8 @@ package pers.kaigian.learning.algorithm.leetcode;
 import java.util.Stack;
 
 /**
- * @author hukaiyang
- * @date 2021-08-15 11:15
+ * @Author BrianHu
+ * @Create 2021-08-15 11:15
  **/
 public class CQueue {
 	private Stack<Integer> leftStack;

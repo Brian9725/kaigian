@@ -9,8 +9,8 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
 /**
- * @author hukaiyang
- * @date 2021-04-13 13:53
+ * @Author BrianHu
+ * @Create 2021-04-13 13:53
  **/
 public class ChatServer {
 	public static void main(String[] args) {

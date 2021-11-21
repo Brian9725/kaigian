@@ -8,8 +8,8 @@ import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
 /**
- * @author hukaiyang
- * @date 2021-04-13 13:54
+ * @Author BrianHu
+ * @Create 2021-04-13 13:54
  **/
 public class ChatServerHandler extends SimpleChannelInboundHandler {
 	private static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);

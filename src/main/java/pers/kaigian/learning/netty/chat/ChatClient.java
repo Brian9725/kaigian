@@ -14,8 +14,8 @@ import io.netty.handler.codec.string.StringEncoder;
 import java.util.Scanner;
 
 /**
- * @author hukaiyang
- * @date 2021-04-13 13:54
+ * @Author BrianHu
+ * @Create 2021-04-13 13:54
  **/
 public class ChatClient {
 	public static void main(String[] args) {
