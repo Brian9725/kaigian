@@ -3,8 +3,8 @@ package pers.kaigian.learning.algorithm.leetcode;
 import java.util.Stack;
 
 /**
- * @Author BrianHu
- * @Create 2021-08-15 11:22
+ * @author BrianHu
+ * @create 2021-08-15 11:22
  **/
 public class MinStack {
 

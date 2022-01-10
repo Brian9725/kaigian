@@ -10,8 +10,8 @@ import java.nio.channels.SocketChannel;
 import java.util.Set;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-07 17:04
+ * @author BrianHu
+ * @create 2021-04-07 17:04
  **/
 public class NIOSelectorServer {
     public static void main(String[] args) throws IOException {

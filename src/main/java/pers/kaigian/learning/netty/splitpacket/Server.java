@@ -7,8 +7,8 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-13 13:53
+ * @author BrianHu
+ * @create 2021-04-13 13:53
  **/
 public class Server {
     public static void main(String[] args) {

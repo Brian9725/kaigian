@@ -1,8 +1,8 @@
 package pers.kaigian.learning.algorithm.leetcode;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-21 14:22
+ * @author BrianHu
+ * @create 2021-04-21 14:22
  **/
 public class Solution {
 

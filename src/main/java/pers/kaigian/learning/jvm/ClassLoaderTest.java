@@ -6,8 +6,8 @@ import sun.net.spi.nameservice.dns.DNSNameService;
 import java.net.URL;
 
 /**
- * @Author BrianHu
- * @Create 2021-03-22 13:37
+ * @author BrianHu
+ * @create 2021-03-22 13:37
  **/
 public class ClassLoaderTest {
     class Apple {

@@ -9,8 +9,8 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-13 10:57
+ * @author BrianHu
+ * @create 2021-04-13 10:57
  **/
 public class NettyClient {
     public static void main(String[] args) {

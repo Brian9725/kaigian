@@ -7,8 +7,8 @@ import pers.kaigian.learning.netty.ProtostuffUtil;
 import java.util.List;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-14 14:35
+ * @author BrianHu
+ * @create 2021-04-14 14:35
  **/
 public class MyStringEncoder extends MessageToMessageEncoder<String> {
     @Override

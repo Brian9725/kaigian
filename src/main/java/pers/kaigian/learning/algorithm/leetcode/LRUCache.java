@@ -3,8 +3,8 @@ package pers.kaigian.learning.algorithm.leetcode;
 import java.util.HashMap;
 
 /**
- * @Author BrianHu
- * @Create 2021-06-04 14:04
+ * @author BrianHu
+ * @create 2021-06-04 14:04
  **/
 public class LRUCache {
     class Node {

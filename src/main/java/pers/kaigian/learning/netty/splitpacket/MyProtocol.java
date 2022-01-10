@@ -1,8 +1,8 @@
 package pers.kaigian.learning.netty.splitpacket;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-14 14:03
+ * @author BrianHu
+ * @create 2021-04-14 14:03
  **/
 public class MyProtocol {
     private int length;

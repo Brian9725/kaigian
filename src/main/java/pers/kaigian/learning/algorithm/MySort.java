@@ -5,8 +5,8 @@ import java.util.Random;
 /**
  * 可以用leetcode-912来测试结果
  *
- * @Author BrianHu
- * @Create 2021-04-21 14:20
+ * @author BrianHu
+ * @create 2021-04-21 14:20
  **/
 public class MySort {
 

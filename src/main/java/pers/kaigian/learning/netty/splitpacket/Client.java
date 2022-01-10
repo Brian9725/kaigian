@@ -10,8 +10,8 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-13 13:54
+ * @author BrianHu
+ * @create 2021-04-13 13:54
  **/
 public class Client {
     public static void main(String[] args) {

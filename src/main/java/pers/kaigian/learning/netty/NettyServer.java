@@ -9,8 +9,8 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-13 10:32
+ * @author BrianHu
+ * @create 2021-04-13 10:32
  **/
 public class NettyServer {
     public static void main(String[] args) {

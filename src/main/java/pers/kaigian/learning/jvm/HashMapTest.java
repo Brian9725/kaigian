@@ -5,8 +5,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @Author BrianHu
- * @Create 2021-05-18 13:59
+ * @author BrianHu
+ * @create 2021-05-18 13:59
  **/
 public class HashMapTest {
 

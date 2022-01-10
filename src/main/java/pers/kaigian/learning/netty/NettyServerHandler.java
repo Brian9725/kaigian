@@ -7,8 +7,8 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-13 10:54
+ * @author BrianHu
+ * @create 2021-04-13 10:54
  **/
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     @Override

@@ -9,8 +9,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-14 14:40
+ * @author BrianHu
+ * @create 2021-04-14 14:40
  **/
 public class ProtostuffUtil {
     private static final Map<Class<?>, Schema<?>> cachedSchema = new ConcurrentHashMap<>();

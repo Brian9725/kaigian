@@ -1,8 +1,8 @@
 package pers.kaigian.learning.algorithm.leetcode;
 
 /**
- * @Author BrianHu
- * @Create 2021-06-04 14:03
+ * @author BrianHu
+ * @create 2021-06-04 14:03
  **/
 public class TreeNode {
     int val;

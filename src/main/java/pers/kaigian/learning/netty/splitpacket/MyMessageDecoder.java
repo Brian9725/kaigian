@@ -7,8 +7,8 @@ import io.netty.handler.codec.ByteToMessageDecoder;
 import java.util.List;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-14 14:05
+ * @author BrianHu
+ * @create 2021-04-14 14:05
  **/
 public class MyMessageDecoder extends ByteToMessageDecoder {
     private int length = 0;

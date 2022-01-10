@@ -3,8 +3,8 @@ package pers.kaigian.learning.algorithm;
 /**
  * 可以用leetcode-28测试
  *
- * @Author BrianHu
- * @Create 2021-04-25 10:40
+ * @author BrianHu
+ * @create 2021-04-25 10:40
  **/
 public class KMP {
 

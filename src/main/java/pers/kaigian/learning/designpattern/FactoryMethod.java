@@ -1,8 +1,8 @@
 package pers.kaigian.learning.designpattern;
 
 /**
- * @Author BrianHu
- * @Create 2021-04-21 14:23
+ * @author BrianHu
+ * @create 2021-04-21 14:23
  **/
 public class FactoryMethod {
     public static void main(String[] args) {
